@@ -1,26 +1,10 @@
 :root {
-        /* --main-menu-item-color: #7D7D7D; kebab case */
-        /* --mainMenuItemColor: #7D7D7D; camel case*/
-        /* main_menu_item_color #7D7D7D;snake case*/
-        /* Colors */
     --main-menu-item-color: #7d7d7d;
     --accent-menu-item-color: #03A9F4;
     --gallery-name-color: #b4ad9e;
     --primary-gallery-text-color: #626262;
-    /* Fonts */
     --font-family: "Playfair Display", sans-serif;
     --second-family: "Ubuntu", sans-serif;
-}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-.menu{
-    list-style: none;
 }
 body {
     font-family: var(--font-family);
@@ -34,7 +18,6 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 1px solid red; */
 }
 .header {
     padding-top: 70px;
@@ -46,7 +29,6 @@ body {
     background-position: center;
     position: fixed;
     z-index: 1;
-    /* width: 100px; */
     top: 0;
     left: 0;
     right: 0;
@@ -76,7 +58,6 @@ body {
     height: 4px;
     position: absolute;
     top: 80px;
-    /* margin-top: 10px; */
 }
 
 .gallery-list {
@@ -111,7 +92,6 @@ body {
     text-shadow: 2px 2px 5px rgb(28, 28, 28);
 }
 .gallery-item {
-    /* width: 420px; */
      flex-basis: calc((100% - 65px) / 2);
 
 }

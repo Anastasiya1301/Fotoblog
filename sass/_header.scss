@@ -1,0 +1,36 @@
+.header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: var(--accent-menu-item-color);
+    background-image: url(../image/girlontheconcert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.menu {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+}
+.menu-link {
+    color: var(--main-menu-item-color);
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu-link:hover::after,
+.menu-link:focus::after {
+    color: black;
+    background-color: var(--accent-menu-item-color);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 80px;
+}
