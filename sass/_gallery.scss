@@ -38,9 +38,9 @@
 
 }
 .gallery-item-name {
-    font-family: var(--second-family);
+    font-family: $second-family;
     font-weight: 300;
-    color: var(--gallery-name-color);
+    color: $gallery-name-color;
 }
 .gallery-item-title {
     font-size: 30px;

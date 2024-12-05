@@ -1,10 +1,10 @@
 .button{
     display:block;
-    color: var(--primary-gallery-text-color);
+    color: $primary-gallery-text-color;
     padding: 20px 48px;
-    border: 1px solid var(--primary-gallery-text-color);
+    border: 1px solid $primary-gallery-text-color;
     margin: 95px auto 0;
-    color: var(--primary-gallery-text-color);
+    color: $pr;
 }
 .scroll-btn {
     position: fixed;
