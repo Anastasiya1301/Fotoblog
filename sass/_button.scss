@@ -4,7 +4,8 @@
     padding: 20px 48px;
     border: 1px solid $primary-gallery-text-color;
     margin: 95px auto 0;
-    color: $pr;
+    $bgcolor:red;
+    background-color: $bgcolor;
 }
 .scroll-btn {
     position: fixed;
@@ -13,5 +14,5 @@
     border: 1px solid black;
     border-radius: 100%;
     padding: 15px;
-    background-color: blue;
+    background-color:blue;
 }
