@@ -1,7 +1,7 @@
-@import "./reset";
-@import "./variables";
-@import "./typografy";
-@import "./container";
-@import "./header";
-@import "./gallery";
-@import "./button";
+@import "base/reset";
+@import "abstracts/variables";
+@import "base/typografy";
+@import "components/container";
+@import "layout/header";
+@import "components/gallery";
+@import "components/button";
