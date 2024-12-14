@@ -3,7 +3,7 @@
     padding-bottom:63px;
 }
 .gallery-list {
-    display: flex;
+  @extend %flex;
     flex-wrap: wrap;
     column-gap: 65px;
     row-gap: none;
