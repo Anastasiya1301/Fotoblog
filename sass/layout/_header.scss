@@ -12,25 +12,89 @@
     left: 0;
     right: 0;
 }
-.menu {
-    display: flex;
-    column-gap: 100px;
-    justify-content: center;
+.modal-btn,
+.modal-label {
+    display: none;
 }
-.menu-link {
-    color: white;
+.menu {
+    @extend %flex;
+    // display: flex;
+    column-gap: 100px;
+    // justify-content: center;
+        
+}
+.menu-link{
+    color: black;
     font-weight: 700;
     position: relative;
     text-transform: uppercase;
 }
 .menu-link:hover::after,
-.menu-link:focus::after {
-    color: black;
+.menu-link:focus::after{
+    color: $accent-menu-item-color;
     background-color: $accent-menu-item-color;
-    content: "";
+    content:"";
     display: block;
     width: 100%;
     height: 4px;
     position: absolute;
     top: 80px;
+    /* margin-top: 10px; */
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .modal-label {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        // background-color: green;
+    }
+    .modal-line,
+    .modal-line::before,
+    .modal-line::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 4px;
+        background-color: white;
+    }
+    .modal-line {
+        top: 15px;
+    }
+    .modal-line::before {
+        top: -15px;
+    }
+    .modal-line::after {
+        top: 15px;
+    }
+    .modal-btn:checked ~ .modal-label .modal-line {
+        transform: rotate(-45deg);
+    }
+    .modal-btn:checked ~ .modal-label .modal-line::before {
+        transform: rotate(0);
+        top: 0;
+    }
+    .modal-btn:checked ~ .modal-label .modal-line::after {
+        transform: rotate(90deg);
+        top: 0;
+    }
+    .menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: yellow;
+        top: 100px;
+        padding: 20px;
+    }
+    .modal-btn:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: start;
+    }
 }
